@@ -12,7 +12,7 @@ df1 %>%
   geom_point()+
   geom_line()+
   scale_color_manual(values = c("#E41A1C", "#377EB8", "#4DAF4A", 
-                               "#984EA3"))+
+                                "#984EA3"))+
   theme_bw()+
   labs(x= "Ano" , y = "Homicídios dolosos" , color = "Região")+
   ggtitle("Homicídios dolosos por região do RJ")
