@@ -8,8 +8,6 @@ df1 = dados %>%
   summarise(hom_doloso_reg = sum(hom_doloso))
 df1 %>%
   ungroup() %>%
-  #mutate(ano.mes = paste(ano, mes, sep = "." )) %>%
-  #filter(Regiao == "Capital") %>%
   ggplot(aes(x = ano, y = hom_doloso_reg, color = Regiao))+
   geom_point()+
   geom_line()+
